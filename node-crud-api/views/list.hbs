@@ -1,0 +1,15 @@
+<div>
+    Employees
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        {{#each data}}
+        <tr>
+            <td>{{ this.name}}</td>
+            <td>{{ this}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
