@@ -8,9 +8,9 @@ const app = express()
 app.use(bodyParser.json())
 app.use(cors())
 
-const posts = require('./routes/api/postController')
+const notes = require('./routes/api/notesController')
 
-app.use('/api/posts', posts)
+app.use('/api/notes', notes)
 
 const port = process.env.PORT || 3000
 
